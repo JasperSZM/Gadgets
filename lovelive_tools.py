@@ -1,6 +1,7 @@
 import requests
 says=[]
-for i in range(200):
+num_of_says = 200
+for i in range(num_of_says):
 	html = requests.get('https://api.lovelive.tools/api/SweetNothings/:count')
 	says.append(html.text)
 	print(i)
